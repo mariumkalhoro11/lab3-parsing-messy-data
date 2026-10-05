@@ -1,6 +1,16 @@
 # lab3-parsing-messy-data
 
 ## Comparison of Regex and AI-Assisted Cleaning
+## Overview
+
+This lab compares two methods for cleaning messy clinical data: a Python regex-based approach and an AI-assisted approach. I used `messy_samples.csv`, which contains 60 synthetic clinical sample records with inconsistent date formats, sex categories, enrollment site names, and glucose units.
+
+The cleaned outputs are:
+
+- Regex output: `output/samples_regex_cleaned.csv`
+- AI-assisted output: `output/samples_ai_cleaned.csv`
+- Regex script: `scripts/clean_samples_regex.py`
+- AI prompts: `AI_USAGE.md`
 
 For this lab, I compared a regex-based Python cleaning approach with an AI-assisted cleaning approach using the same `messy_samples.csv` file. Overall, the two approaches agreed on most of the records after the values were standardized. Both methods were able to clean the sample IDs, dates of birth, sex values, enrollment sites, glucose units, and notes into a more consistent format.
 
@@ -47,3 +57,9 @@ The AI-assisted approach was faster at the beginning because I could provide the
 The regex approach took more time because I had to create functions for sample IDs, dates, sex values, sites, glucose values, and units. I also had to test the script and fix errors before it produced the final output file.
 
 Even though regex took longer, I felt more confident in the final process because I could see exactly how every value was being changed. For this reason, I would use AI to help explore messy data and find patterns, but I would use tested programmatic rules for the final version of a real health-data cleaning workflow.
+## How to Run
+
+Install pandas if needed:
+
+```bash
+pip install pandas
