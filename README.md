@@ -63,3 +63,10 @@ Install pandas if needed:
 
 ```bash
 pip install pandas
+```
+
+Run the regex cleaning script:
+
+```bash
+python scripts/clean_samples_regex.py
+```
